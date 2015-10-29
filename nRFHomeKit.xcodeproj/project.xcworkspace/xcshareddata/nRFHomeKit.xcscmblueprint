@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "505D091FCE6B7D82C4E78EFE0E5FD34637A7AD66",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C6E95E54BFB4A43DA8D60320761D73A379C35F36" : 0,
+    "505D091FCE6B7D82C4E78EFE0E5FD34637A7AD66" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4EDE837C-3970-44E3-9187-C5CFDDB679C1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C6E95E54BFB4A43DA8D60320761D73A379C35F36" : "nRFHomekit",
+    "505D091FCE6B7D82C4E78EFE0E5FD34637A7AD66" : "IOS-nRF-For-HomeKit\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "nRFHomeKit",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "nRFHomeKit.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Kamran-Soomro\/IOS-nRF-For-HomeKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "505D091FCE6B7D82C4E78EFE0E5FD34637A7AD66"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/stash.nordicsemi.no:7999\/apps-ios\/nrf-homekit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C6E95E54BFB4A43DA8D60320761D73A379C35F36"
+    }
+  ]
+}

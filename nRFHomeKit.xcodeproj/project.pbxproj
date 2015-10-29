@@ -1,0 +1,947 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A83711E21BC4150C00977843 /* AddAccessoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83711E11BC4150C00977843 /* AddAccessoryTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A83711E41BC4160300977843 /* AddAccessoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83711E31BC4160300977843 /* AddAccessoryTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		A83893D01B14878B005B738D /* SelectAccessoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83893CF1B14878B005B738D /* SelectAccessoryTableViewController.swift */; };
+		A83940711B552311001DE943 /* HomeKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83940701B552311001DE943 /* HomeKitManager.swift */; };
+		A853B9531B4D4FBF000920B6 /* ISColorWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = A853B9521B4D4FBF000920B6 /* ISColorWheel.m */; };
+		A85CBA7D1B6F95CC00327CBA /* DoorLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85CBA7C1B6F95CC00327CBA /* DoorLock.swift */; };
+		A85CBA831B71F62400327CBA /* DFUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A85CBA821B71F62400327CBA /* DFUViewController.m */; };
+		A85CBA851B71F62B00327CBA /* DFUHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A85CBA841B71F62B00327CBA /* DFUHelper.m */; };
+		A85CBA901B71FB1800327CBA /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = A85CBA8F1B71FB1800327CBA /* Utility.m */; };
+		A85CBA931B71FB2F00327CBA /* BLEOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = A85CBA921B71FB2F00327CBA /* BLEOperations.m */; };
+		A85CBA961B71FB3B00327CBA /* DFUOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = A85CBA951B71FB3B00327CBA /* DFUOperations.m */; };
+		A85CBA991B71FB4900327CBA /* DFUOperationsDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = A85CBA981B71FB4900327CBA /* DFUOperationsDetails.m */; };
+		A85CBA9C1B71FB5400327CBA /* FileOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = A85CBA9B1B71FB5400327CBA /* FileOperations.m */; };
+		A85CBA9F1B71FB8000327CBA /* InitData.m in Sources */ = {isa = PBXBuildFile; fileRef = A85CBA9E1B71FB8000327CBA /* InitData.m */; };
+		A85CBAA21B71FB8C00327CBA /* JsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A85CBAA11B71FB8C00327CBA /* JsonParser.m */; };
+		A85CBAA51B71FBA000327CBA /* UnzipFirmware.m in Sources */ = {isa = PBXBuildFile; fileRef = A85CBAA41B71FBA000327CBA /* UnzipFirmware.m */; };
+		A85CBAA81B71FBB600327CBA /* AccessFileSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = A85CBAA71B71FBB600327CBA /* AccessFileSystem.m */; };
+		A85CBAAE1B71FBD600327CBA /* FileTypeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A85CBAAD1B71FBD600327CBA /* FileTypeTableViewController.m */; };
+		A85CBAB31B71FBE600327CBA /* FolderFilesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A85CBAB01B71FBE600327CBA /* FolderFilesTableViewController.m */; };
+		A85CBAB41B71FBE600327CBA /* UserFilesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A85CBAB21B71FBE600327CBA /* UserFilesTableViewController.m */; };
+		A85CBAB71B71FC2500327CBA /* IntelHex2BinConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = A85CBAB61B71FC2500327CBA /* IntelHex2BinConverter.m */; };
+		A85CBABD1B71FE2200327CBA /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = A85CBABC1B71FE2200327CBA /* SSZipArchive.m */; };
+		A85CBAC71B71FE3C00327CBA /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = A85CBABF1B71FE3C00327CBA /* ioapi.c */; };
+		A85CBAC81B71FE3C00327CBA /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = A85CBAC11B71FE3C00327CBA /* mztools.c */; };
+		A85CBAC91B71FE3C00327CBA /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = A85CBAC31B71FE3C00327CBA /* unzip.c */; };
+		A85CBACA1B71FE3C00327CBA /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = A85CBAC51B71FE3C00327CBA /* zip.c */; };
+		A86F1E9A1B6B796B00B6822A /* Lightbulb.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86F1E991B6B796B00B6822A /* Lightbulb.swift */; };
+		A87D016B1B971FF90064FF91 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87D016A1B971FF90064FF91 /* HelpViewController.swift */; };
+		A87D016D1B999A650064FF91 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87D016C1B999A650064FF91 /* WebViewController.swift */; };
+		A88204281B0F2241004134FD /* HMErrorCodeMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88204271B0F2241004134FD /* HMErrorCodeMessage.swift */; };
+		A882042A1B0F2440004134FD /* HMCharacteristicName.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88204291B0F2440004134FD /* HMCharacteristicName.swift */; };
+		A882042C1B0F2701004134FD /* HMServiceName.swift in Sources */ = {isa = PBXBuildFile; fileRef = A882042B1B0F2701004134FD /* HMServiceName.swift */; };
+		A8A0DF751AF10B89005FEE8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A0DF741AF10B89005FEE8F /* AppDelegate.swift */; };
+		A8A0DF771AF10B89005FEE8F /* LightbulbViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A0DF761AF10B89005FEE8F /* LightbulbViewController.swift */; };
+		A8A0DF7A1AF10B89005FEE8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8A0DF781AF10B89005FEE8F /* Main.storyboard */; };
+		A8A0DF7C1AF10B89005FEE8F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8A0DF7B1AF10B89005FEE8F /* Images.xcassets */; };
+		A8A0DF7F1AF10B89005FEE8F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8A0DF7D1AF10B89005FEE8F /* LaunchScreen.xib */; };
+		A8A0DF8B1AF10B89005FEE8F /* nRFHomekitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A0DF8A1AF10B89005FEE8F /* nRFHomekitTests.swift */; };
+		A8A0DF981AF10EB8005FEE8F /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8A0DF971AF10EB8005FEE8F /* HomeKit.framework */; };
+		A8A19F001BAC3AAD003A6F2F /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A19EFF1BAC3AAD003A6F2F /* Utility.swift */; settings = {ASSET_TAGS = (); }; };
+		A8A3C2901B739F030073BF91 /* ScannedPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A3C28C1B739F030073BF91 /* ScannedPeripheral.m */; };
+		A8A3C2911B739F030073BF91 /* ScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A3C28F1B739F030073BF91 /* ScannerViewController.m */; };
+		A8CECCEB1B5CEE850087D0C6 /* LogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CECCEA1B5CEE850087D0C6 /* LogTableViewController.swift */; };
+		A8CECCED1B5E3BCA0087D0C6 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CECCEC1B5E3BCA0087D0C6 /* Logger.swift */; };
+		A8D8AD2D1B44207000D26085 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D8AD2C1B44207000D26085 /* MainViewController.swift */; };
+		A8D8AD2F1B456D2A00D26085 /* SelectAccessoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D8AD2E1B456D2A00D26085 /* SelectAccessoryTableViewCell.swift */; };
+		A8D8AD311B4583DD00D26085 /* DoorLockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D8AD301B4583DD00D26085 /* DoorLockViewController.swift */; };
+		A8E1378E1BBAD7F00041C406 /* HomesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E1378D1BBAD7F00041C406 /* HomesTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A8E137901BBAD94B0041C406 /* RoomConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E1378F1BBAD94B0041C406 /* RoomConfigurationViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A8E137921BBAD9730041C406 /* AccessoryConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E137911BBAD9730041C406 /* AccessoryConfigurationViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A8E137941BBEAF570041C406 /* HomeConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E137931BBEAF570041C406 /* HomeConfigurationViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A8F780C11B78CC92001EB3BC /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F780C01B78CC92001EB3BC /* SwitchViewController.swift */; };
+		A8F780C31B78CCE4001EB3BC /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F780C21B78CCE4001EB3BC /* Switch.swift */; };
+		A8F780C51B78E409001EB3BC /* OutletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F780C41B78E409001EB3BC /* OutletViewController.swift */; };
+		A8F780C71B78E481001EB3BC /* Outlet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F780C61B78E481001EB3BC /* Outlet.swift */; };
+		A8F780C91B78E57E001EB3BC /* FanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F780C81B78E57E001EB3BC /* FanViewController.swift */; };
+		A8F780CB1B78E596001EB3BC /* Fan.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F780CA1B78E596001EB3BC /* Fan.swift */; };
+		A8FF52891B8C680B00A0BA6A /* GarageDoorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FF52881B8C680B00A0BA6A /* GarageDoorViewController.swift */; };
+		A8FF528B1B8C683900A0BA6A /* GarageDoor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FF528A1B8C683900A0BA6A /* GarageDoor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A8A0DF851AF10B89005FEE8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8A0DF671AF10B89005FEE8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8A0DF6E1AF10B89005FEE8F;
+			remoteInfo = nRFHomeKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A83711E11BC4150C00977843 /* AddAccessoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAccessoryTableViewController.swift; sourceTree = "<group>"; };
+		A83711E31BC4160300977843 /* AddAccessoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAccessoryTableViewCell.swift; sourceTree = "<group>"; };
+		A83893CF1B14878B005B738D /* SelectAccessoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAccessoryTableViewController.swift; sourceTree = "<group>"; };
+		A83940701B552311001DE943 /* HomeKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeKitManager.swift; sourceTree = "<group>"; };
+		A853B9521B4D4FBF000920B6 /* ISColorWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISColorWheel.m; sourceTree = "<group>"; };
+		A853B9541B4D4FCB000920B6 /* ISColorWheel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISColorWheel.h; sourceTree = "<group>"; };
+		A853B9551B4D4FD4000920B6 /* nRFHomeKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "nRFHomeKit-Bridging-Header.h"; sourceTree = "<group>"; };
+		A85CBA7C1B6F95CC00327CBA /* DoorLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoorLock.swift; sourceTree = "<group>"; };
+		A85CBA811B71F61600327CBA /* DFUViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DFUViewController.h; path = DFU/DFUViewController/DFUViewController.h; sourceTree = "<group>"; };
+		A85CBA821B71F62400327CBA /* DFUViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DFUViewController.m; path = DFU/DFUViewController/DFUViewController.m; sourceTree = "<group>"; };
+		A85CBA841B71F62B00327CBA /* DFUHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DFUHelper.m; path = DFU/DFUViewController/DFUHelper.m; sourceTree = "<group>"; };
+		A85CBA861B71F63100327CBA /* DFUHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DFUHelper.h; path = DFU/DFUViewController/DFUHelper.h; sourceTree = "<group>"; };
+		A85CBA8E1B71FB1200327CBA /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Utility.h; path = DFU/Constants/Utility.h; sourceTree = "<group>"; };
+		A85CBA8F1B71FB1800327CBA /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utility.m; path = DFU/Constants/Utility.m; sourceTree = "<group>"; };
+		A85CBA911B71FB2800327CBA /* BLEOperations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BLEOperations.h; path = DFU/DFUImplementation/BLEOperations.h; sourceTree = "<group>"; };
+		A85CBA921B71FB2F00327CBA /* BLEOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLEOperations.m; path = DFU/DFUImplementation/BLEOperations.m; sourceTree = "<group>"; };
+		A85CBA941B71FB3500327CBA /* DFUOperations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DFUOperations.h; path = DFU/DFUImplementation/DFUOperations.h; sourceTree = "<group>"; };
+		A85CBA951B71FB3B00327CBA /* DFUOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DFUOperations.m; path = DFU/DFUImplementation/DFUOperations.m; sourceTree = "<group>"; };
+		A85CBA971B71FB4300327CBA /* DFUOperationsDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DFUOperationsDetails.h; path = DFU/DFUImplementation/DFUOperationsDetails.h; sourceTree = "<group>"; };
+		A85CBA981B71FB4900327CBA /* DFUOperationsDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DFUOperationsDetails.m; path = DFU/DFUImplementation/DFUOperationsDetails.m; sourceTree = "<group>"; };
+		A85CBA9A1B71FB5000327CBA /* FileOperations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FileOperations.h; path = DFU/DFUImplementation/FileOperations.h; sourceTree = "<group>"; };
+		A85CBA9B1B71FB5400327CBA /* FileOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileOperations.m; path = DFU/DFUImplementation/FileOperations.m; sourceTree = "<group>"; };
+		A85CBA9D1B71FB7700327CBA /* InitData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = InitData.h; path = DFU/JSONParser/InitData.h; sourceTree = "<group>"; };
+		A85CBA9E1B71FB8000327CBA /* InitData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InitData.m; path = DFU/JSONParser/InitData.m; sourceTree = "<group>"; };
+		A85CBAA01B71FB8600327CBA /* JsonParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JsonParser.h; path = DFU/JSONParser/JsonParser.h; sourceTree = "<group>"; };
+		A85CBAA11B71FB8C00327CBA /* JsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JsonParser.m; path = DFU/JSONParser/JsonParser.m; sourceTree = "<group>"; };
+		A85CBAA31B71FB9C00327CBA /* UnzipFirmware.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UnzipFirmware.h; path = DFU/Unzip/UnzipFirmware.h; sourceTree = "<group>"; };
+		A85CBAA41B71FBA000327CBA /* UnzipFirmware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UnzipFirmware.m; path = DFU/Unzip/UnzipFirmware.m; sourceTree = "<group>"; };
+		A85CBAA61B71FBB000327CBA /* AccessFileSystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AccessFileSystem.h; path = DFU/FileSelection/AccessFileSystem.h; sourceTree = "<group>"; };
+		A85CBAA71B71FBB600327CBA /* AccessFileSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccessFileSystem.m; path = DFU/FileSelection/AccessFileSystem.m; sourceTree = "<group>"; };
+		A85CBAAC1B71FBCD00327CBA /* FileTypeTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FileTypeTableViewController.h; path = DFU/FileSelection/FileTypeTableViewController.h; sourceTree = "<group>"; };
+		A85CBAAD1B71FBD600327CBA /* FileTypeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FileTypeTableViewController.m; path = DFU/FileSelection/FileTypeTableViewController.m; sourceTree = "<group>"; };
+		A85CBAAF1B71FBE600327CBA /* FolderFilesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FolderFilesTableViewController.h; path = DFU/FileSelection/FolderFilesTableViewController.h; sourceTree = "<group>"; };
+		A85CBAB01B71FBE600327CBA /* FolderFilesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FolderFilesTableViewController.m; path = DFU/FileSelection/FolderFilesTableViewController.m; sourceTree = "<group>"; };
+		A85CBAB11B71FBE600327CBA /* UserFilesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserFilesTableViewController.h; path = DFU/FileSelection/UserFilesTableViewController.h; sourceTree = "<group>"; };
+		A85CBAB21B71FBE600327CBA /* UserFilesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserFilesTableViewController.m; path = DFU/FileSelection/UserFilesTableViewController.m; sourceTree = "<group>"; };
+		A85CBAB51B71FC2500327CBA /* IntelHex2BinConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IntelHex2BinConverter.h; path = DFU/HexToBinConverter/IntelHex2BinConverter.h; sourceTree = "<group>"; };
+		A85CBAB61B71FC2500327CBA /* IntelHex2BinConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IntelHex2BinConverter.m; path = DFU/HexToBinConverter/IntelHex2BinConverter.m; sourceTree = "<group>"; };
+		A85CBABB1B71FE2200327CBA /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSZipArchive.h; path = DFU/Dependencies/SSZipArchive/SSZipArchive.h; sourceTree = "<group>"; };
+		A85CBABC1B71FE2200327CBA /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSZipArchive.m; path = DFU/Dependencies/SSZipArchive/SSZipArchive.m; sourceTree = "<group>"; };
+		A85CBABE1B71FE3C00327CBA /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = DFU/Dependencies/SSZipArchive/minizip/crypt.h; sourceTree = "<group>"; };
+		A85CBABF1B71FE3C00327CBA /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = DFU/Dependencies/SSZipArchive/minizip/ioapi.c; sourceTree = "<group>"; };
+		A85CBAC01B71FE3C00327CBA /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = DFU/Dependencies/SSZipArchive/minizip/ioapi.h; sourceTree = "<group>"; };
+		A85CBAC11B71FE3C00327CBA /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mztools.c; path = DFU/Dependencies/SSZipArchive/minizip/mztools.c; sourceTree = "<group>"; };
+		A85CBAC21B71FE3C00327CBA /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = DFU/Dependencies/SSZipArchive/minizip/mztools.h; sourceTree = "<group>"; };
+		A85CBAC31B71FE3C00327CBA /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = unzip.c; path = DFU/Dependencies/SSZipArchive/minizip/unzip.c; sourceTree = "<group>"; };
+		A85CBAC41B71FE3C00327CBA /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = DFU/Dependencies/SSZipArchive/minizip/unzip.h; sourceTree = "<group>"; };
+		A85CBAC51B71FE3C00327CBA /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = zip.c; path = DFU/Dependencies/SSZipArchive/minizip/zip.c; sourceTree = "<group>"; };
+		A85CBAC61B71FE3C00327CBA /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zip.h; path = DFU/Dependencies/SSZipArchive/minizip/zip.h; sourceTree = "<group>"; };
+		A86F1E991B6B796B00B6822A /* Lightbulb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lightbulb.swift; sourceTree = "<group>"; };
+		A87D016A1B971FF90064FF91 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		A87D016C1B999A650064FF91 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		A88204271B0F2241004134FD /* HMErrorCodeMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMErrorCodeMessage.swift; sourceTree = "<group>"; };
+		A88204291B0F2440004134FD /* HMCharacteristicName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMCharacteristicName.swift; sourceTree = "<group>"; };
+		A882042B1B0F2701004134FD /* HMServiceName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMServiceName.swift; sourceTree = "<group>"; };
+		A8A0DF6F1AF10B89005FEE8F /* nRFHomeKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nRFHomeKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8A0DF731AF10B89005FEE8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8A0DF741AF10B89005FEE8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A8A0DF761AF10B89005FEE8F /* LightbulbViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightbulbViewController.swift; sourceTree = "<group>"; };
+		A8A0DF791AF10B89005FEE8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A8A0DF7B1AF10B89005FEE8F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A8A0DF7E1AF10B89005FEE8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A8A0DF841AF10B89005FEE8F /* nRFHomeKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nRFHomeKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8A0DF891AF10B89005FEE8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8A0DF8A1AF10B89005FEE8F /* nRFHomekitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nRFHomekitTests.swift; sourceTree = "<group>"; };
+		A8A0DF961AF10E93005FEE8F /* nRFHomekit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = nRFHomekit.entitlements; sourceTree = "<group>"; };
+		A8A0DF971AF10EB8005FEE8F /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
+		A8A19EFF1BAC3AAD003A6F2F /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		A8A3C28B1B739F030073BF91 /* ScannedPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScannedPeripheral.h; path = DFU/DFUScanner/ScannedPeripheral.h; sourceTree = "<group>"; };
+		A8A3C28C1B739F030073BF91 /* ScannedPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScannedPeripheral.m; path = DFU/DFUScanner/ScannedPeripheral.m; sourceTree = "<group>"; };
+		A8A3C28D1B739F030073BF91 /* ScannerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScannerDelegate.h; path = DFU/DFUScanner/ScannerDelegate.h; sourceTree = "<group>"; };
+		A8A3C28E1B739F030073BF91 /* ScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScannerViewController.h; path = DFU/DFUScanner/ScannerViewController.h; sourceTree = "<group>"; };
+		A8A3C28F1B739F030073BF91 /* ScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScannerViewController.m; path = DFU/DFUScanner/ScannerViewController.m; sourceTree = "<group>"; };
+		A8CECCEA1B5CEE850087D0C6 /* LogTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogTableViewController.swift; sourceTree = "<group>"; };
+		A8CECCEC1B5E3BCA0087D0C6 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		A8D8AD2C1B44207000D26085 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A8D8AD2E1B456D2A00D26085 /* SelectAccessoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAccessoryTableViewCell.swift; sourceTree = "<group>"; };
+		A8D8AD301B4583DD00D26085 /* DoorLockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoorLockViewController.swift; sourceTree = "<group>"; };
+		A8E1378D1BBAD7F00041C406 /* HomesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomesTableViewController.swift; sourceTree = "<group>"; };
+		A8E1378F1BBAD94B0041C406 /* RoomConfigurationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomConfigurationViewController.swift; sourceTree = "<group>"; };
+		A8E137911BBAD9730041C406 /* AccessoryConfigurationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessoryConfigurationViewController.swift; sourceTree = "<group>"; };
+		A8E137931BBEAF570041C406 /* HomeConfigurationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeConfigurationViewController.swift; sourceTree = "<group>"; };
+		A8F780C01B78CC92001EB3BC /* SwitchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwitchViewController.swift; path = Switch/SwitchViewController.swift; sourceTree = "<group>"; };
+		A8F780C21B78CCE4001EB3BC /* Switch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Switch.swift; sourceTree = "<group>"; };
+		A8F780C41B78E409001EB3BC /* OutletViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OutletViewController.swift; path = Outlet/OutletViewController.swift; sourceTree = "<group>"; };
+		A8F780C61B78E481001EB3BC /* Outlet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Outlet.swift; path = Outlet/Outlet.swift; sourceTree = "<group>"; };
+		A8F780C81B78E57E001EB3BC /* FanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FanViewController.swift; path = Fan/FanViewController.swift; sourceTree = "<group>"; };
+		A8F780CA1B78E596001EB3BC /* Fan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fan.swift; path = Fan/Fan.swift; sourceTree = "<group>"; };
+		A8FF52881B8C680B00A0BA6A /* GarageDoorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GarageDoorViewController.swift; path = GarageDoor/GarageDoorViewController.swift; sourceTree = "<group>"; };
+		A8FF528A1B8C683900A0BA6A /* GarageDoor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GarageDoor.swift; path = GarageDoor/GarageDoor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8A0DF6C1AF10B89005FEE8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8A0DF981AF10EB8005FEE8F /* HomeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8A0DF811AF10B89005FEE8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A85CBA7E1B70EC6C00327CBA /* DFU */ = {
+			isa = PBXGroup;
+			children = (
+				A8A3C28A1B739EE30073BF91 /* DFUScanner */,
+				A85CBAB81B71FDB700327CBA /* Dependencies */,
+				A85CBA8D1B71FAA700327CBA /* Hex to Bin Converter */,
+				A85CBA8C1B71FA8D00327CBA /* File Selection */,
+				A85CBA8B1B71FA6A00327CBA /* Unzip */,
+				A85CBA8A1B71FA1900327CBA /* JSON Parser */,
+				A85CBA891B71F9E800327CBA /* Constants */,
+				A85CBA881B71F99B00327CBA /* DFU Implementation */,
+				A85CBA871B71F64300327CBA /* DFUViewController */,
+			);
+			name = DFU;
+			sourceTree = "<group>";
+		};
+		A85CBA871B71F64300327CBA /* DFUViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A85CBA811B71F61600327CBA /* DFUViewController.h */,
+				A85CBA821B71F62400327CBA /* DFUViewController.m */,
+				A85CBA841B71F62B00327CBA /* DFUHelper.m */,
+				A85CBA861B71F63100327CBA /* DFUHelper.h */,
+			);
+			name = DFUViewController;
+			sourceTree = "<group>";
+		};
+		A85CBA881B71F99B00327CBA /* DFU Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				A85CBA911B71FB2800327CBA /* BLEOperations.h */,
+				A85CBA921B71FB2F00327CBA /* BLEOperations.m */,
+				A85CBA941B71FB3500327CBA /* DFUOperations.h */,
+				A85CBA951B71FB3B00327CBA /* DFUOperations.m */,
+				A85CBA971B71FB4300327CBA /* DFUOperationsDetails.h */,
+				A85CBA981B71FB4900327CBA /* DFUOperationsDetails.m */,
+				A85CBA9A1B71FB5000327CBA /* FileOperations.h */,
+				A85CBA9B1B71FB5400327CBA /* FileOperations.m */,
+			);
+			name = "DFU Implementation";
+			sourceTree = "<group>";
+		};
+		A85CBA891B71F9E800327CBA /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A85CBA8E1B71FB1200327CBA /* Utility.h */,
+				A85CBA8F1B71FB1800327CBA /* Utility.m */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		A85CBA8A1B71FA1900327CBA /* JSON Parser */ = {
+			isa = PBXGroup;
+			children = (
+				A85CBA9D1B71FB7700327CBA /* InitData.h */,
+				A85CBA9E1B71FB8000327CBA /* InitData.m */,
+				A85CBAA01B71FB8600327CBA /* JsonParser.h */,
+				A85CBAA11B71FB8C00327CBA /* JsonParser.m */,
+			);
+			name = "JSON Parser";
+			sourceTree = "<group>";
+		};
+		A85CBA8B1B71FA6A00327CBA /* Unzip */ = {
+			isa = PBXGroup;
+			children = (
+				A85CBAA31B71FB9C00327CBA /* UnzipFirmware.h */,
+				A85CBAA41B71FBA000327CBA /* UnzipFirmware.m */,
+			);
+			name = Unzip;
+			sourceTree = "<group>";
+		};
+		A85CBA8C1B71FA8D00327CBA /* File Selection */ = {
+			isa = PBXGroup;
+			children = (
+				A85CBAA61B71FBB000327CBA /* AccessFileSystem.h */,
+				A85CBAA71B71FBB600327CBA /* AccessFileSystem.m */,
+				A85CBAAC1B71FBCD00327CBA /* FileTypeTableViewController.h */,
+				A85CBAAD1B71FBD600327CBA /* FileTypeTableViewController.m */,
+				A85CBAAF1B71FBE600327CBA /* FolderFilesTableViewController.h */,
+				A85CBAB01B71FBE600327CBA /* FolderFilesTableViewController.m */,
+				A85CBAB11B71FBE600327CBA /* UserFilesTableViewController.h */,
+				A85CBAB21B71FBE600327CBA /* UserFilesTableViewController.m */,
+			);
+			name = "File Selection";
+			sourceTree = "<group>";
+		};
+		A85CBA8D1B71FAA700327CBA /* Hex to Bin Converter */ = {
+			isa = PBXGroup;
+			children = (
+				A85CBAB51B71FC2500327CBA /* IntelHex2BinConverter.h */,
+				A85CBAB61B71FC2500327CBA /* IntelHex2BinConverter.m */,
+			);
+			name = "Hex to Bin Converter";
+			sourceTree = "<group>";
+		};
+		A85CBAB81B71FDB700327CBA /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				A85CBAB91B71FDE900327CBA /* SSZipArchive */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		A85CBAB91B71FDE900327CBA /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				A85CBABB1B71FE2200327CBA /* SSZipArchive.h */,
+				A85CBABC1B71FE2200327CBA /* SSZipArchive.m */,
+				A85CBABA1B71FE0000327CBA /* minizip */,
+			);
+			name = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		A85CBABA1B71FE0000327CBA /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				A85CBABE1B71FE3C00327CBA /* crypt.h */,
+				A85CBABF1B71FE3C00327CBA /* ioapi.c */,
+				A85CBAC01B71FE3C00327CBA /* ioapi.h */,
+				A85CBAC11B71FE3C00327CBA /* mztools.c */,
+				A85CBAC21B71FE3C00327CBA /* mztools.h */,
+				A85CBAC31B71FE3C00327CBA /* unzip.c */,
+				A85CBAC41B71FE3C00327CBA /* unzip.h */,
+				A85CBAC51B71FE3C00327CBA /* zip.c */,
+				A85CBAC61B71FE3C00327CBA /* zip.h */,
+			);
+			name = minizip;
+			sourceTree = "<group>";
+		};
+		A87D01671B96FBC40064FF91 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				A87D016A1B971FF90064FF91 /* HelpViewController.swift */,
+				A87D016C1B999A650064FF91 /* WebViewController.swift */,
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
+		A8A0DF661AF10B89005FEE8F = {
+			isa = PBXGroup;
+			children = (
+				A8B5D2F11B666770008A383C /* Storyboard */,
+				A8A0DF711AF10B89005FEE8F /* nRFHomekit */,
+				A8A0DF871AF10B89005FEE8F /* nRFHomekitTests */,
+				A8A0DF701AF10B89005FEE8F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A8A0DF701AF10B89005FEE8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8A0DF6F1AF10B89005FEE8F /* nRFHomeKit.app */,
+				A8A0DF841AF10B89005FEE8F /* nRFHomeKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8A0DF711AF10B89005FEE8F /* nRFHomekit */ = {
+			isa = PBXGroup;
+			children = (
+				A8E1378A1BBA93860041C406 /* Configuration */,
+				A8B5D2F21B666780008A383C /* Light */,
+				A8B5D2F31B666793008A383C /* Lock */,
+				A87D01671B96FBC40064FF91 /* Help */,
+				A8FF52871B8C67C700A0BA6A /* GarageDoor */,
+				A8F780BF1B78CC3C001EB3BC /* Fan */,
+				A8F780BE1B78CC33001EB3BC /* Outlet */,
+				A8F780BD1B78CC1C001EB3BC /* Switch */,
+				A85CBA7E1B70EC6C00327CBA /* DFU */,
+				A8B5D2F81B666833008A383C /* Utilities */,
+				A8B5D2F71B666825008A383C /* HomeKitManager */,
+				A8B5D2F61B6667CB008A383C /* Log */,
+				A8B5D2F51B6667BA008A383C /* SelectAccessory */,
+				A8B5D2F41B6667A5008A383C /* Main */,
+				A8B5D2F01B66672D008A383C /* ColorWheel */,
+				A8A0DF741AF10B89005FEE8F /* AppDelegate.swift */,
+				A8A0DF7B1AF10B89005FEE8F /* Images.xcassets */,
+				A8A0DF7D1AF10B89005FEE8F /* LaunchScreen.xib */,
+				A8A0DF721AF10B89005FEE8F /* Supporting Files */,
+			);
+			path = nRFHomekit;
+			sourceTree = "<group>";
+		};
+		A8A0DF721AF10B89005FEE8F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8A0DF731AF10B89005FEE8F /* Info.plist */,
+				A8A0DF961AF10E93005FEE8F /* nRFHomekit.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A8A0DF871AF10B89005FEE8F /* nRFHomekitTests */ = {
+			isa = PBXGroup;
+			children = (
+				A8A0DF8A1AF10B89005FEE8F /* nRFHomekitTests.swift */,
+				A8A0DF881AF10B89005FEE8F /* Supporting Files */,
+			);
+			path = nRFHomekitTests;
+			sourceTree = "<group>";
+		};
+		A8A0DF881AF10B89005FEE8F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8A0DF891AF10B89005FEE8F /* Info.plist */,
+				A8A0DF971AF10EB8005FEE8F /* HomeKit.framework */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A8A3C28A1B739EE30073BF91 /* DFUScanner */ = {
+			isa = PBXGroup;
+			children = (
+				A8A3C28B1B739F030073BF91 /* ScannedPeripheral.h */,
+				A8A3C28C1B739F030073BF91 /* ScannedPeripheral.m */,
+				A8A3C28D1B739F030073BF91 /* ScannerDelegate.h */,
+				A8A3C28E1B739F030073BF91 /* ScannerViewController.h */,
+				A8A3C28F1B739F030073BF91 /* ScannerViewController.m */,
+			);
+			name = DFUScanner;
+			sourceTree = "<group>";
+		};
+		A8B5D2F01B66672D008A383C /* ColorWheel */ = {
+			isa = PBXGroup;
+			children = (
+				A853B9521B4D4FBF000920B6 /* ISColorWheel.m */,
+				A853B9541B4D4FCB000920B6 /* ISColorWheel.h */,
+				A853B9551B4D4FD4000920B6 /* nRFHomeKit-Bridging-Header.h */,
+			);
+			path = ColorWheel;
+			sourceTree = "<group>";
+		};
+		A8B5D2F11B666770008A383C /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A8A0DF781AF10B89005FEE8F /* Main.storyboard */,
+			);
+			name = Storyboard;
+			path = nRFHomekit/Base.lproj;
+			sourceTree = "<group>";
+		};
+		A8B5D2F21B666780008A383C /* Light */ = {
+			isa = PBXGroup;
+			children = (
+				A8A0DF761AF10B89005FEE8F /* LightbulbViewController.swift */,
+				A86F1E991B6B796B00B6822A /* Lightbulb.swift */,
+			);
+			path = Light;
+			sourceTree = "<group>";
+		};
+		A8B5D2F31B666793008A383C /* Lock */ = {
+			isa = PBXGroup;
+			children = (
+				A8D8AD301B4583DD00D26085 /* DoorLockViewController.swift */,
+				A85CBA7C1B6F95CC00327CBA /* DoorLock.swift */,
+			);
+			path = Lock;
+			sourceTree = "<group>";
+		};
+		A8B5D2F41B6667A5008A383C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A8D8AD2C1B44207000D26085 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A8B5D2F51B6667BA008A383C /* SelectAccessory */ = {
+			isa = PBXGroup;
+			children = (
+				A83893CF1B14878B005B738D /* SelectAccessoryTableViewController.swift */,
+				A8D8AD2E1B456D2A00D26085 /* SelectAccessoryTableViewCell.swift */,
+			);
+			path = SelectAccessory;
+			sourceTree = "<group>";
+		};
+		A8B5D2F61B6667CB008A383C /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				A8CECCEA1B5CEE850087D0C6 /* LogTableViewController.swift */,
+				A8CECCEC1B5E3BCA0087D0C6 /* Logger.swift */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		A8B5D2F71B666825008A383C /* HomeKitManager */ = {
+			isa = PBXGroup;
+			children = (
+				A83940701B552311001DE943 /* HomeKitManager.swift */,
+			);
+			path = HomeKitManager;
+			sourceTree = "<group>";
+		};
+		A8B5D2F81B666833008A383C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A88204271B0F2241004134FD /* HMErrorCodeMessage.swift */,
+				A88204291B0F2440004134FD /* HMCharacteristicName.swift */,
+				A882042B1B0F2701004134FD /* HMServiceName.swift */,
+				A8A19EFF1BAC3AAD003A6F2F /* Utility.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A8E1378A1BBA93860041C406 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				A8E1378D1BBAD7F00041C406 /* HomesTableViewController.swift */,
+				A8E1378F1BBAD94B0041C406 /* RoomConfigurationViewController.swift */,
+				A8E137911BBAD9730041C406 /* AccessoryConfigurationViewController.swift */,
+				A8E137931BBEAF570041C406 /* HomeConfigurationViewController.swift */,
+				A83711E11BC4150C00977843 /* AddAccessoryTableViewController.swift */,
+				A83711E31BC4160300977843 /* AddAccessoryTableViewCell.swift */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		A8F780BD1B78CC1C001EB3BC /* Switch */ = {
+			isa = PBXGroup;
+			children = (
+				A8F780C01B78CC92001EB3BC /* SwitchViewController.swift */,
+				A8F780C21B78CCE4001EB3BC /* Switch.swift */,
+			);
+			name = Switch;
+			sourceTree = "<group>";
+		};
+		A8F780BE1B78CC33001EB3BC /* Outlet */ = {
+			isa = PBXGroup;
+			children = (
+				A8F780C41B78E409001EB3BC /* OutletViewController.swift */,
+				A8F780C61B78E481001EB3BC /* Outlet.swift */,
+			);
+			name = Outlet;
+			sourceTree = "<group>";
+		};
+		A8F780BF1B78CC3C001EB3BC /* Fan */ = {
+			isa = PBXGroup;
+			children = (
+				A8F780C81B78E57E001EB3BC /* FanViewController.swift */,
+				A8F780CA1B78E596001EB3BC /* Fan.swift */,
+			);
+			name = Fan;
+			sourceTree = "<group>";
+		};
+		A8FF52871B8C67C700A0BA6A /* GarageDoor */ = {
+			isa = PBXGroup;
+			children = (
+				A8FF52881B8C680B00A0BA6A /* GarageDoorViewController.swift */,
+				A8FF528A1B8C683900A0BA6A /* GarageDoor.swift */,
+			);
+			name = GarageDoor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8A0DF6E1AF10B89005FEE8F /* nRFHomeKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8A0DF8E1AF10B89005FEE8F /* Build configuration list for PBXNativeTarget "nRFHomeKit" */;
+			buildPhases = (
+				A8A0DF6B1AF10B89005FEE8F /* Sources */,
+				A8A0DF6C1AF10B89005FEE8F /* Frameworks */,
+				A8A0DF6D1AF10B89005FEE8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nRFHomeKit;
+			productName = nRFHomeKit;
+			productReference = A8A0DF6F1AF10B89005FEE8F /* nRFHomeKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A8A0DF831AF10B89005FEE8F /* nRFHomeKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8A0DF911AF10B89005FEE8F /* Build configuration list for PBXNativeTarget "nRFHomeKitTests" */;
+			buildPhases = (
+				A8A0DF801AF10B89005FEE8F /* Sources */,
+				A8A0DF811AF10B89005FEE8F /* Frameworks */,
+				A8A0DF821AF10B89005FEE8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8A0DF861AF10B89005FEE8F /* PBXTargetDependency */,
+			);
+			name = nRFHomeKitTests;
+			productName = nRFHomekitTests;
+			productReference = A8A0DF841AF10B89005FEE8F /* nRFHomeKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8A0DF671AF10B89005FEE8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Nordic Semiconductor";
+				TargetAttributes = {
+					A8A0DF6E1AF10B89005FEE8F = {
+						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = P3R8YQEV4L;
+						SystemCapabilities = {
+							com.apple.HomeKit = {
+								enabled = 1;
+							};
+						};
+					};
+					A8A0DF831AF10B89005FEE8F = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = A8A0DF6E1AF10B89005FEE8F;
+					};
+				};
+			};
+			buildConfigurationList = A8A0DF6A1AF10B89005FEE8F /* Build configuration list for PBXProject "nRFHomeKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8A0DF661AF10B89005FEE8F;
+			productRefGroup = A8A0DF701AF10B89005FEE8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8A0DF6E1AF10B89005FEE8F /* nRFHomeKit */,
+				A8A0DF831AF10B89005FEE8F /* nRFHomeKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8A0DF6D1AF10B89005FEE8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8A0DF7A1AF10B89005FEE8F /* Main.storyboard in Resources */,
+				A8A0DF7F1AF10B89005FEE8F /* LaunchScreen.xib in Resources */,
+				A8A0DF7C1AF10B89005FEE8F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8A0DF821AF10B89005FEE8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8A0DF6B1AF10B89005FEE8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8F780C71B78E481001EB3BC /* Outlet.swift in Sources */,
+				A85CBAC91B71FE3C00327CBA /* unzip.c in Sources */,
+				A8CECCEB1B5CEE850087D0C6 /* LogTableViewController.swift in Sources */,
+				A85CBAB71B71FC2500327CBA /* IntelHex2BinConverter.m in Sources */,
+				A85CBA961B71FB3B00327CBA /* DFUOperations.m in Sources */,
+				A8FF528B1B8C683900A0BA6A /* GarageDoor.swift in Sources */,
+				A85CBABD1B71FE2200327CBA /* SSZipArchive.m in Sources */,
+				A86F1E9A1B6B796B00B6822A /* Lightbulb.swift in Sources */,
+				A8E137941BBEAF570041C406 /* HomeConfigurationViewController.swift in Sources */,
+				A8D8AD2D1B44207000D26085 /* MainViewController.swift in Sources */,
+				A8A3C2901B739F030073BF91 /* ScannedPeripheral.m in Sources */,
+				A8F780C31B78CCE4001EB3BC /* Switch.swift in Sources */,
+				A85CBAA51B71FBA000327CBA /* UnzipFirmware.m in Sources */,
+				A85CBA931B71FB2F00327CBA /* BLEOperations.m in Sources */,
+				A882042A1B0F2440004134FD /* HMCharacteristicName.swift in Sources */,
+				A85CBAA21B71FB8C00327CBA /* JsonParser.m in Sources */,
+				A85CBA901B71FB1800327CBA /* Utility.m in Sources */,
+				A85CBA991B71FB4900327CBA /* DFUOperationsDetails.m in Sources */,
+				A85CBAB31B71FBE600327CBA /* FolderFilesTableViewController.m in Sources */,
+				A85CBA7D1B6F95CC00327CBA /* DoorLock.swift in Sources */,
+				A8D8AD311B4583DD00D26085 /* DoorLockViewController.swift in Sources */,
+				A85CBAB41B71FBE600327CBA /* UserFilesTableViewController.m in Sources */,
+				A87D016B1B971FF90064FF91 /* HelpViewController.swift in Sources */,
+				A85CBAA81B71FBB600327CBA /* AccessFileSystem.m in Sources */,
+				A83940711B552311001DE943 /* HomeKitManager.swift in Sources */,
+				A8E1378E1BBAD7F00041C406 /* HomesTableViewController.swift in Sources */,
+				A87D016D1B999A650064FF91 /* WebViewController.swift in Sources */,
+				A8A3C2911B739F030073BF91 /* ScannerViewController.m in Sources */,
+				A8F780C91B78E57E001EB3BC /* FanViewController.swift in Sources */,
+				A8F780CB1B78E596001EB3BC /* Fan.swift in Sources */,
+				A85CBA9C1B71FB5400327CBA /* FileOperations.m in Sources */,
+				A8E137901BBAD94B0041C406 /* RoomConfigurationViewController.swift in Sources */,
+				A85CBACA1B71FE3C00327CBA /* zip.c in Sources */,
+				A8F780C11B78CC92001EB3BC /* SwitchViewController.swift in Sources */,
+				A85CBA851B71F62B00327CBA /* DFUHelper.m in Sources */,
+				A85CBAAE1B71FBD600327CBA /* FileTypeTableViewController.m in Sources */,
+				A853B9531B4D4FBF000920B6 /* ISColorWheel.m in Sources */,
+				A8D8AD2F1B456D2A00D26085 /* SelectAccessoryTableViewCell.swift in Sources */,
+				A85CBAC81B71FE3C00327CBA /* mztools.c in Sources */,
+				A85CBA9F1B71FB8000327CBA /* InitData.m in Sources */,
+				A8A0DF771AF10B89005FEE8F /* LightbulbViewController.swift in Sources */,
+				A83893D01B14878B005B738D /* SelectAccessoryTableViewController.swift in Sources */,
+				A8CECCED1B5E3BCA0087D0C6 /* Logger.swift in Sources */,
+				A85CBA831B71F62400327CBA /* DFUViewController.m in Sources */,
+				A882042C1B0F2701004134FD /* HMServiceName.swift in Sources */,
+				A85CBAC71B71FE3C00327CBA /* ioapi.c in Sources */,
+				A8F780C51B78E409001EB3BC /* OutletViewController.swift in Sources */,
+				A83711E21BC4150C00977843 /* AddAccessoryTableViewController.swift in Sources */,
+				A8E137921BBAD9730041C406 /* AccessoryConfigurationViewController.swift in Sources */,
+				A8A19F001BAC3AAD003A6F2F /* Utility.swift in Sources */,
+				A8FF52891B8C680B00A0BA6A /* GarageDoorViewController.swift in Sources */,
+				A88204281B0F2241004134FD /* HMErrorCodeMessage.swift in Sources */,
+				A83711E41BC4160300977843 /* AddAccessoryTableViewCell.swift in Sources */,
+				A8A0DF751AF10B89005FEE8F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8A0DF801AF10B89005FEE8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8A0DF8B1AF10B89005FEE8F /* nRFHomekitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A8A0DF861AF10B89005FEE8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8A0DF6E1AF10B89005FEE8F /* nRFHomeKit */;
+			targetProxy = A8A0DF851AF10B89005FEE8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A8A0DF781AF10B89005FEE8F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8A0DF791AF10B89005FEE8F /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A8A0DF7D1AF10B89005FEE8F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8A0DF7E1AF10B89005FEE8F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A8A0DF8C1AF10B89005FEE8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A8A0DF8D1AF10B89005FEE8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A8A0DF8F1AF10B89005FEE8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = nRFHomekit/nRFHomekit.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/nRFHomekit/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-lz";
+				PRODUCT_NAME = nRFHomeKit;
+				PROVISIONING_PROFILE = "";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "nRFHomeKit/ColorWheel/nRFHomeKit-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				"SWIFT_OBJC_INTERFACE_HEADER_NAME[arch=*]" = "$(SWIFT_MODULE_NAME)-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A8A0DF901AF10B89005FEE8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = nRFHomekit/nRFHomekit.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/nRFHomekit/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "-lz";
+				PRODUCT_NAME = nRFHomeKit;
+				PROVISIONING_PROFILE = "";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "nRFHomeKit/ColorWheel/nRFHomeKit-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A8A0DF921AF10B89005FEE8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = nRFHomekitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = nRFHomeKitTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nRFHomeKit.app/nRFHomeKit";
+			};
+			name = Debug;
+		};
+		A8A0DF931AF10B89005FEE8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = nRFHomekitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = nRFHomeKitTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nRFHomeKit.app/nRFHomeKit";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8A0DF6A1AF10B89005FEE8F /* Build configuration list for PBXProject "nRFHomeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8A0DF8C1AF10B89005FEE8F /* Debug */,
+				A8A0DF8D1AF10B89005FEE8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8A0DF8E1AF10B89005FEE8F /* Build configuration list for PBXNativeTarget "nRFHomeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8A0DF8F1AF10B89005FEE8F /* Debug */,
+				A8A0DF901AF10B89005FEE8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8A0DF911AF10B89005FEE8F /* Build configuration list for PBXNativeTarget "nRFHomeKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8A0DF921AF10B89005FEE8F /* Debug */,
+				A8A0DF931AF10B89005FEE8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A8A0DF671AF10B89005FEE8F /* Project object */;
+}
