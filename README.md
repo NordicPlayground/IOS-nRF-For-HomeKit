@@ -1,11 +1,14 @@
 #Important Information
-This project repository will be removed from "NordicSemiconductor/" in two weeks. We decide to no longer support on this project.
+**This project repository will be removed from "NordicSemiconductor/" in two weeks. We decide to no longer support on this project.**
+
 Sorry for the inconvenience. 
 
 If you have any question please write to 
+
 mag@nordicsemi.no
 
 NordicSemiconductor ASA
+
 2016-01-12
 
 # IOS-nRF-For-HomeKit
